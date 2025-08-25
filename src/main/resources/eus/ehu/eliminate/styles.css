@@ -1,0 +1,52 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #FF5733, #FFC300, #DAF7A6, #33FF57, #33C1FF);
+    -fx-padding: 20;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0.5, 0, 1);
+    -fx-opacity: 0;
+    -fx-transition: opacity 1s ease-in-out;
+}
+
+.label.visible {
+    -fx-opacity: 1;
+}
+
+.text-field {
+    -fx-font-size: 12px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #33C1FF;
+    -fx-border-radius: 5;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 3, 0.5, 0, 1);
+}
+
+.text-field:focused {
+    -fx-border-color: #FFC300;
+    -fx-border-width: 2;
+}
+
+.button {
+    -fx-font-size: 12px;
+    -fx-background-color: #33C1FF;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-padding: 8 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 3, 0.5, 0, 1);
+    -fx-transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    -fx-background-color: #33FF57;
+    -fx-transform: scale(1.05);
+}
+
+.button:pressed {
+    -fx-background-color: #FF5733;
+    -fx-transform: scale(0.95);
+}
